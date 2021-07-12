@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="syntax-highlighter/prism.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="./syntax-highlighter/prism.js"></script>
+		<title>Basic HTML examples</title>
+	</head>
+	<body>
+		<main>
+			<h1>
+				<span class="h1-style">&lt;h1></span> HTML Basic Examples
+				<span class="h1-style">&lt;/h1></span>
+				<br />
+				<small>
+					a
+					<a target="_blank" href="https://nikhilmwarrier.github.io"
+						>nikhilmwarrier</a
+					>
+					site.
+					<br />
+					Source code:
+					<a target="_blank" href="https://github.com/nikhilmwarrier/schoolwork"
+						>@nikhilmwarrier/schoolwork/basic-html-examples</a
+					>
+				</small>
+			</h1>
+			<details>
+				<summary>Jump to section:</summary>
+				<ul>
+					<li><a href="#bold-and-italics">Bold and italics</a></li>
+					<li><a href="#p-tag">&lt;p> tag</a></li>
+					<li><a href="#font-tag">&lt;font> tag</a></li>
+				</ul>
+			</details>
+
+			<section id="bold-and-italics">
+				<h2>Bold and Italics</h2>
+				<pre
+					class="language-html"
+				><code>&lt;b>Bold&lt;/b> & &lt;i>Italicized&lt;/i>
+		&lt;!--Or [recommended]  -->
+&lt;strong>Bold&lt;/strong> & &lt;em>Italicized&lt;/em></code></pre>
+				<span class="example-title"> Result: </span>
+				<div class="example"><strong>Bold</strong> & <em>Italicized</em></div>
+				<blockquote>
+					Note: It is recommended to stop using presentational tags like
+					<code>&lt;b></code> and <code>&lt;i></code> in favor of their more
+					semantic counterparts <code>&lt;strong></code> and
+					<code>&lt;em></code>.
+				</blockquote>
+			</section>
+
+			<section id="p-tag">
+				<h2>The <code>&lt;p></code> tag:</h2>
+				<pre
+					class="language-html"
+				><code>&lt;p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, dolores? &lt;/p></code></pre>
+				<span class="example-title"> Result: </span>
+				<div class="example">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid,
+					dolores?
+				</div>
+			</section>
+
+			<section id="font-tag">
+				<h2><code>&lt;font></code> tag</h2>
+				<blockquote class="warning">
+					Warning: Deprecated. Avoid using presentational HTML tags. <br />
+					Just use <code>font</code> and <code>color</code> CSS properties
+					instead.
+				</blockquote>
+				<pre
+					class="language-html"
+				><code>&lt;font face="sans-serif" color="green"> Hello I'm deprecated! Whee! &lt;/font></code></pre>
+				<span class="example-title"> Result: </span>
+				<div class="example">
+					<font face="sans-serif" color="green">
+						Hello I'm deprecated! Whee!
+					</font>
+				</div>
+			</section>
+		</main>
+
+		<footer>&copy; 2021 nikhilmwarrier. Source code licensed under MIT.</footer>
+	</body>
+</html>

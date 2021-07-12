@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 1rem;
+	line-height: 1.8rem;
+	font-family: "Roboto", sans-serif;
+	color: #333;
+	background: #eee;
+	scroll-behavior: smooth;
+}
+
+main,
+footer {
+	width: 85ch;
+	max-width: 95%;
+	margin: auto;
+}
+
+h1 {
+	font-weight: normal;
+	text-align: center;
+	font-size: 2rem;
+	line-height: 2.8rem;
+	padding: 2rem;
+}
+
+h1 small {
+	font-size: 0.9rem;
+}
+
+.h1-style {
+	opacity: 0.5;
+	font-size: 50%;
+	font-family: "Fira Code", monospace;
+	user-select: none;
+	vertical-align: middle;
+}
+
+h2 {
+	font-weight: normal;
+}
+
+section {
+	padding: 2rem;
+	margin: 2rem 0;
+	border: 1px solid #ccc;
+	border-radius: 0.5rem;
+	background: #fff;
+}
+
+pre[class^=" language-"] {
+	border-radius: 0.5rem;
+}
+pre[class^=" language-"] code {
+	font-family: "Fira Code", monospace !important;
+}
+
+code:not([class^=" language-"]) {
+	font-size: 80%;
+	font-family: "Fira Code", monospace;
+	background: #ddd;
+	padding: 0 0.2rem;
+	border-radius: 3px;
+}
+
+details {
+	background: #eee;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	transition: all 0.2s;
+	border: 1px solid transparent;
+}
+
+details summary {
+	user-select: none;
+}
+
+details[open] {
+	background: #fff;
+	border-color: #ccc;
+}
+
+details[open] ul {
+	animation: details-tag-open 0.3s;
+}
+
+details ul {
+	list-style: inside;
+	padding-left: 1rem;
+}
+
+a {
+	color: darkcyan;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+a:hover {
+	color: rgb(0, 161, 161);
+	text-decoration: underline;
+}
+
+::selection {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+@keyframes details-tag-open {
+	from {
+		opacity: 0;
+		transform: translateY(-10%);
+	}
+}
+
+.example {
+	padding-left: 1rem;
+	border-left: 2px solid #ccc;
+	background: #eee;
+}
+
+.example-title {
+	font-weight: bold;
+}
+
+blockquote {
+	font-style: italic;
+	line-height: 1.5rem;
+	padding: 0 1rem;
+	margin: 1rem 0;
+	border-left: 2px solid #ccc;
+}
+
+blockquote.warning {
+	border-color: red;
+	background: #fcc;
+}
